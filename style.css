@@ -6,14 +6,65 @@
     font-style: normal;
 }
 
+/*
+#c5ebd6
+#83e1ad
+#3ddc84
+#2fa866
+#1a5c37
+#063d1e
+*/
+
 body {
-    background-color: #c5ebd6;
+    background-color: #9bd3b4;
 }
 
 header {
     text-align: center;
+    padding-top: 10px;
+    background-color: green;
 }
 
-main > h1 {
+main {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+
+    min-width: 280px;
+    max-width: 800px;
+    margin: auto;
+}
+
+main a, strong {
+    color: rgb(8, 117, 8);
+    text-decoration: none;
+}
+
+main > img {
+    width: 100%;
+}
+main h1, h2 {
+    color: green;
     font-family: 'Droid';
+}
+
+main > h2 {
+    background-color: #c5ebd6;
+}
+
+aside {
+    display: block;
+    margin: 0 auto;
+    width: 800px;
+    background-color: #9bd3b4;
+    border-radius: 10px;
+}
+
+aside > h3 {
+    height: 30px;
+    background-color: rgb(31, 161, 31);
+    color: white;
+    border-radius: 10px;
+    padding-top: 8px;
+    padding-left: 7px;
 }
