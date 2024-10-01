@@ -6,24 +6,43 @@
     font-style: normal;
 }
 
-/*
-#c5ebd6
-#83e1ad
-#3ddc84
-#2fa866
-#1a5c37
-#063d1e
-*/
+:root {
+  --cor0: #c5ebd6;
+  --cor1: #83e1ad;      
+  --cor2: #3ddc84;      
+  --cor3: #2fa866;      
+  --cor4: #1a5c37;      
+  --cor5: #063d1e;        
+}
+
 
 body {
-    background-color: #9bd3b4;
+    background-color: var(--cor0);
 }
+
 
 header {
     text-align: center;
-    padding-top: 10px;
-    background-color: green;
+    color: white;
+    padding-top: 20px;
+    background-image: linear-gradient(to bottom , var(--cor2), var(--cor4));
+    width: 100vw;
+    height: 168px;
+    box-shadow: 0px 0px 9px 0px black;
 }
+
+nav {
+    background-color: var(--cor4);
+    padding-bottom: 10px;
+    width: 100vw;
+}
+
+nav > a {
+    text-decoration: none;
+    color: white;
+    padding: 5px; 
+}
+
 
 main {
     background-color: white;
@@ -43,28 +62,76 @@ main a, strong {
 main > img {
     width: 100%;
 }
+
+main > img.pequena {
+    display: block;
+    margin: auto;
+    max-width: 350px;
+}
 main h1, h2 {
     color: green;
     font-family: 'Droid';
 }
 
+main p {
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+}
+
 main > h2 {
-    background-color: #c5ebd6;
+    background-image: linear-gradient(to right, var(--cor0), white);
+}
+
+div.video {
+
+    background-color: var(--cor5);
 }
 
 aside {
-    display: block;
-    margin: 0 auto;
-    width: 800px;
-    background-color: #9bd3b4;
+    margin: auto;
+    width: 74vw;
+    background-color: var(--cor0);
     border-radius: 10px;
+    padding-left: 4px;
+    padding-right: 7px;
+    padding-bottom: 7px;
 }
 
 aside > h3 {
-    height: 30px;
-    background-color: rgb(31, 161, 31);
+    width: 74vw;
+    height: 3vh;
+    background-color: var(--cor3);
     color: white;
     border-radius: 10px;
-    padding-top: 8px;
-    padding-left: 7px;
+    padding-top: 10px;
+    padding-right: 7px;
+}
+
+aside > ul {
+    list-style: '\2714\00A0';
+    list-style-position: inside;
+    columns: 2;
+}
+
+footer {
+    background-color: var(--cor5);
+    color: white;
+    text-align: center;
+    border-radius: 11px;
+    height: 27px;
+    margin-top: 10px;
+}
+
+footer > p {
+    color: var(--cor0);
+}
+
+footer > p > a {
+    text-decoration: none;
+    color: white;
+}
+
+footer > p > strong {
+    color: white;
 }
